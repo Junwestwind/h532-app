@@ -1,0 +1,26 @@
+{
+  "name": "h532-app",
+  "version": "1.0.0",
+  "description": "this is a test app",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junwestwind/h532-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junwestwind/h532-app/issues"
+  },
+  "homepage": "https://github.com/Junwestwind/h532-app#readme"
+}
