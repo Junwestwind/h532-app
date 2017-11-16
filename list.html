@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>生活周边</title>
+	<link rel="stylesheet" href="assets/css/list.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_421348_i2yznzqvgnrn3ik9.css">
+</head>
+<body>
+<div id="app">
+	<div class="fix">
+		<a class="suggest" href="" title="意见反馈"></a>
+		<div class="gotop" title="回到顶部"></div>
+	</div>
+
+
+	<div class="container-banner">
+		<div class="img">
+			<img src="assets/images/logo-new2.png" alt="">
+		</div>
+		<ul class="header">
+			<li class="noselect"><a href="">魅族商城</a></li>
+			<li class="select"><a href="">魅族手机</a></li>
+			<li class="select"><a href="">魅蓝手机</a></li>
+			<li class="select"><a href="">魅族声学</a></li>
+			<li class="select"><a href="">智能 . 配件</a></li>
+			<li class="noselect"><a href="">服务</a></li>
+			<li class="noselect"><a href="">专卖店</a></li>
+			<li class="noselect"><a href="">Flyme</a></li>
+			<li class="noselect"><a href="">社区</a></li>
+			<li class="noselect te">
+				<div class="search">
+					<input type="text" value="" placeholder="手机">
+					<i class="iconfont icon-icon_search"></i>
+				</div>
+			</li>
+			<li class="login noselect">
+				<img src="assets/images/icon-user.png" alt="">
+				<span></span>
+				<ul class="login-content">
+					<li><a href="form.html">立即登陆</a></li>
+					<li><a href="form.html">立即注册</a></li>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">M码通道</a></li>
+				</ul>
+			</li>
+			<li class="noselect cart-logo">
+				<img src="assets/images/shop-cart.png" height="22" width="22" alt="">
+				<span>0</span>
+				<p></p>
+				<div class="cart-add">
+					<img src="assets/images/index.png" alt="">
+					
+					<div>
+						<p>登陆后可显示</p>
+						<p>你账号中已加入的商品哦~</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="run-detail">
+			<div class="run-detail1">
+				<div class="item">
+					<ul v-for="goods in detail1">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{goods.type}}</p>
+							<p class="p2">{{goods.price}}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail2">
+				<div class="item active">
+					<ul v-for="goods in detail2">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail3">
+				<div class="item active">
+					<ul v-for="goods in detail3">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail4">
+				<div class="item active">
+					<ul v-for="goods in detail4">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<ul class="list1">
+			<li class="first">首页</li>
+			<li>全部商品</li>
+			<li class="last">生活周边</li>
+		</ul>
+		<div class="list2">
+			<ul>
+				<li class="nocheck te">分类:</li>
+				<li>全部</li>
+				<li>包</li>
+				<li>自拍杆</li>
+				<li>手机镜头</li>
+				<li>颈枕</li>
+				<li>卷/直发棒</li>
+				<li>电动牙刷</li>
+				<li>运动水杯</li>
+			</ul>
+			<ol>
+				<li class="nocheck te">品牌:</li>
+				<li>全部</li>
+				<li>魅族</li>
+				<li>魅蓝</li>
+				<li>猎奇</li>
+				<li>力博得</li>
+				<li>福满园</li>
+				<li>Lena</li>
+			</ol>
+		</div>
+		<div class="list3">
+			<ul class="list3-check">
+				<li class="active">推荐</li>
+				<li>新品</li>
+				<li>价格</li>
+			</ul>
+			<div class="list3-label">
+				<label for=""><i></i>仅显示有货商品</label>
+			</div>
+		</div>
+		<div class="list3-content">
+			<div class="content">
+				<ul class="active">
+					<li class="goods1"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <a href="detail.html"><div class="big-img">
+	                        	<img class="active" src="assets/images/li1-big1.jpg">
+	                        </div></a>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li1-small1.jpg"></dd>
+	                            
+	                           </dl>
+	                        </div>
+	                        <h2>FUNIPICA 0.36x广角15x微距鱼眼镜头套装</h2>
+	                        <h3>手机外置镜头 单反手机镜头 手机自拍镜头 通用型</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">119</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods2"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li2-big1.jpg">
+	                        	<img src="assets/images/li2-big2.jpg">
+	                       		<img src="assets/images/li2-big3.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li2-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small3.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族缤纷 MINi自拍杆</h2>
+	                        <h3>轻巧Mini 自在随心</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">39</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods3"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li3-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li3-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族熊猫磁吸出风口支架</h2>
+	                        <h3>高度兼容 安稳放置</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">49</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods4"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li4-big1.jpg">
+	                        	<img src="assets/images/li4-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li4-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li4-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族蓝牙自拍杆</h2>
+	                        <h3>还给你自由的双手</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods5"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li5-big1.jpg">
+	                        	<img src="assets/images/li5-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li5-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li5-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得MZ声波电动牙刷</h2>
+	                        <h3>机身12度弯曲 深入口腔清洁 3档频率2支刷头</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">359</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods6"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li6-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li6-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2时光声波电动牙刷礼盒</h2>
+	                        <h3>3档频率3支刷头 极简风格配旅行盒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">399</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods7"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li7-big1.jpg">
+	                        	<img src="assets/images/li7-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li7-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li7-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2极光声波电动牙刷</h2>
+	                        <h3>3档频率 缓解牙敏感</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">299</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods8"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li8-big1.jpg">
+	                        	<img src="assets/images/li8-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li8-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li8-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>猎奇0.65X广角+鱼眼+微距手机镜头套装</h2>
+	                        <h3>手机变单反 自拍秒变大长腿</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods9"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li9-big1.jpg">
+	                        	<img src="assets/images/li9-big2.jpg">
+	                       		<img src="assets/images/li9-big3.jpg">
+	                       		<img src="assets/images/li9-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li9-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>多功能颈枕</h2>
+	                        <h3>亲肤面料 携带方便</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">59</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods10"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li10-big1.jpg">
+	                        	<img src="assets/images/li10-big2.jpg">
+	                       		<img src="assets/images/li10-big3.jpg">
+	                       		<img src="assets/images/li10-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li10-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>乐基因 经典广口运动太空水杯 1000ml</h2>
+	                        <h3>美国进口 耐高温 密封防漏</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">129</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods11"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li11-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li11-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>飞科剃须刀FS339</h2>
+	                        <h3>全身水洗 智能操作系统 三头浮动剃须</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods12"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li12-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li12-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>Lena轻松打造9种发型护发卷发棒</h2>
+	                        <h3>Lena轻松打造9种发型防烫卷直两用卷发棒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+				</ul>
+				<ul>
+					<li class="goods1"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li2-big1.jpg">
+	                        	<img src="assets/images/li2-big2.jpg">
+	                       		<img src="assets/images/li2-big3.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li2-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small3.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族缤纷 MINi自拍杆</h2>
+	                        <h3>轻巧Mini 自在随心</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">39</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods3"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li4-big1.jpg">
+	                        	<img src="assets/images/li4-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li4-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li4-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族蓝牙自拍杆</h2>
+	                        <h3>还给你自由的双手</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods2"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li1-big1.jpg">
+	                        	<img src="assets/images/li1-big2.jpg">
+	                       		<img src="assets/images/li1-big3.jpg">
+	                       		<img src="assets/images/li1-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li1-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>FUNIPICA 0.36x广角15x微距鱼眼镜头套装</h2>
+	                        <h3>手机外置镜头 单反手机镜头 手机自拍镜头 通用型</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">119</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods4"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li3-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li3-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族熊猫磁吸出风口支架</h2>
+	                        <h3>高度兼容 安稳放置</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">49</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					
+					<li class="goods5"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li5-big1.jpg">
+	                        	<img src="assets/images/li5-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li5-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li5-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得MZ声波电动牙刷</h2>
+	                        <h3>机身12度弯曲 深入口腔清洁 3档频率2支刷头</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">359</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods6"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li6-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li6-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2时光声波电动牙刷礼盒</h2>
+	                        <h3>3档频率3支刷头 极简风格配旅行盒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">399</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods7"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li7-big1.jpg">
+	                        	<img src="assets/images/li7-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li7-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li7-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2极光声波电动牙刷</h2>
+	                        <h3>3档频率 缓解牙敏感</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">299</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods8"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li8-big1.jpg">
+	                        	<img src="assets/images/li8-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li8-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li8-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>猎奇0.65X广角+鱼眼+微距手机镜头套装</h2>
+	                        <h3>手机变单反 自拍秒变大长腿</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods9"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li9-big1.jpg">
+	                        	<img src="assets/images/li9-big2.jpg">
+	                       		<img src="assets/images/li9-big3.jpg">
+	                       		<img src="assets/images/li9-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li9-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>多功能颈枕</h2>
+	                        <h3>亲肤面料 携带方便</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">59</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods10"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li10-big1.jpg">
+	                        	<img src="assets/images/li10-big2.jpg">
+	                       		<img src="assets/images/li10-big3.jpg">
+	                       		<img src="assets/images/li10-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li10-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>乐基因 经典广口运动太空水杯 1000ml</h2>
+	                        <h3>美国进口 耐高温 密封防漏</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">129</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods11"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li11-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li11-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>飞科剃须刀FS339</h2>
+	                        <h3>全身水洗 智能操作系统 三头浮动剃须</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods12"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li12-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li12-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>Lena轻松打造9种发型护发卷发棒</h2>
+	                        <h3>Lena轻松打造9种发型防烫卷直两用卷发棒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+				</ul>
+				<ul class="active">
+					<li class="goods1"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li10-big1.jpg">
+	                        	<img src="assets/images/li10-big2.jpg">
+	                       		<img src="assets/images/li10-big3.jpg">
+	                       		<img src="assets/images/li10-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li10-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li10-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>FUNIPICA 0.36x广角15x微距鱼眼镜头套装</h2>
+	                        <h3>手机外置镜头 单反手机镜头 手机自拍镜头 通用型</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">119</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods2"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li2-big1.jpg">
+	                        	<img src="assets/images/li2-big2.jpg">
+	                       		<img src="assets/images/li2-big3.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li2-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li2-small3.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族缤纷 MINi自拍杆</h2>
+	                        <h3>轻巧Mini 自在随心</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">39</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods3"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li3-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li3-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族熊猫磁吸出风口支架</h2>
+	                        <h3>高度兼容 安稳放置</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">49</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods4"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li4-big1.jpg">
+	                        	<img src="assets/images/li4-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li4-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li4-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>魅族蓝牙自拍杆</h2>
+	                        <h3>还给你自由的双手</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods5"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li5-big1.jpg">
+	                        	<img src="assets/images/li5-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li5-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li5-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得MZ声波电动牙刷</h2>
+	                        <h3>机身12度弯曲 深入口腔清洁 3档频率2支刷头</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">359</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods6"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li6-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li6-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2时光声波电动牙刷礼盒</h2>
+	                        <h3>3档频率3支刷头 极简风格配旅行盒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">399</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods7"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li7-big1.jpg">
+	                        	<img src="assets/images/li7-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li7-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li7-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>力博得I2极光声波电动牙刷</h2>
+	                        <h3>3档频率 缓解牙敏感</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">299</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods8"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li8-big1.jpg">
+	                        	<img src="assets/images/li8-big2.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li8-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li8-small2.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>猎奇0.65X广角+鱼眼+微距手机镜头套装</h2>
+	                        <h3>手机变单反 自拍秒变大长腿</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">69</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods9"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li9-big1.jpg">
+	                        	<img src="assets/images/li9-big2.jpg">
+	                       		<img src="assets/images/li9-big3.jpg">
+	                       		<img src="assets/images/li9-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li9-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li9-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>多功能颈枕</h2>
+	                        <h3>亲肤面料 携带方便</h3>
+	                        <dd>
+	                        	<span>限时特惠</span>
+	                        	<span>￥</span>
+	                        	<span class="price">59</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods10"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li1-big1.jpg">
+	                        	<img src="assets/images/li1-big2.jpg">
+	                       		<img src="assets/images/li1-big3.jpg">
+	                       		<img src="assets/images/li1-big4.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li1-small1.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small2.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small3.jpg"></dd>
+	                               <dd><img src="assets/images/li1-small4.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>乐基因 经典广口运动太空水杯 1000ml</h2>
+	                        <h3>美国进口 耐高温 密封防漏</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">129</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods11"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li11-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li11-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>飞科剃须刀FS339</h2>
+	                        <h3>全身水洗 智能操作系统 三头浮动剃须</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+					<li class="goods12"><a href="javascript:;">
+	                    <div class="item-wrap">
+	                        <div class="big-img">
+	                        	<img class="active" src="assets/images/li12-big.jpg">
+	                        </div>
+	                        <div class="small-img">
+	                           <dl>
+	                               <dd class="active"><img src="assets/images/li12-small.jpg"></dd>
+	                           </dl>
+	                        </div>
+	                        <h2>Lena轻松打造9种发型护发卷发棒</h2>
+	                        <h3>Lena轻松打造9种发型防烫卷直两用卷发棒</h3>
+	                        <dd><span>￥</span>
+	                        	<span class="price">139</span>
+	                        </dd>
+	                    </div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="list3-num">
+			<div class="num-content">
+				<span><</span>
+				<a href="">1</a>
+				<a href="">2</a>
+				<span>></span>
+			</div>
+		</div>
+		<div class="list4">
+			<div class="list4-header">
+				<h2 class="header-title">为您推荐</h2>
+				<div class="header-control">
+					<a href=""><</a>
+					<a href="">></a>
+				</div>
+			</div>
+			<div class="list4-content">
+				<ul v-for="i in list4">
+					<li><a href="">
+                       <div class="content-img"><img :src="i.img"></div>
+                       <div class="content-ay">
+                            <h4>{{ i.type }}</h4>
+                            <h6>{{ i.introduce }}</h6>
+                            <p><span>￥</span><span class="price-text">{{ i.price }}</span><del>{{ i.del }}</del></p>
+                       </div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+		<div class="footer">
+			<div class="footer-link">
+				<div class="footer1">
+					<ul>
+						<li><a href="">
+                             <img src="assets/images/untitled1.png">
+                             <span>全场包邮</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled2.png">
+                             <span>百城速达</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled3.png">
+                             <span>7天无理由退货</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled4.png">
+                             <span>15天换货保障</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled5.png">
+                             <span>1年免费保修</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled6.png">
+                             <span>2300+线下体验店</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled7.png">
+                             <span>远程支持服务</span>
+						</a></li>
+						<li><a href="">
+                             <img src="assets/images/untitled8.png">
+                             <span>上门快降</span>
+						</a></li>
+					</ul>
+					<div class="footer1-right">
+						<span>24小时全国服务热线</span>
+						<p class="tel">400-788-3333</p>
+						<a href=""><img src="assets/images/untitled-footer.png" alt="">在线客服</a>
+					</div>
+				</div>
+				<hr>
+				<div class="footer2">
+					<div class="footer2-left">
+						<ul>
+							<li>了解魅族</li>
+							<li>加入我们</li>
+							<li>联系我们</li>
+							<li>Flyme</li>
+							<li>魅族社区</li>
+							<li>天猫旗舰店</li>
+							<li>问题反馈</li>
+							<li>线上销售授权名单公示</li>
+							<li><span><img src="assets/images/lang-logo.png" alt=""></span>中文</li>
+						</ul>
+						<div class="left-con">
+						&copy;2017 Meizu Telecom Equipment Co. Ltd. All rights reserved.
+							<a href="">粤ICP备1300360号</a>
+							<a href="">合字B2-20170010</a>
+							<a href="">营业执照</a>
+							<a href="">法律声明</a>
+							<span><i></i>粤公网安备 44049102496009 号</span>
+							<a class="con1" href=""><img class="before" src="assets/images/ban1-before.png"><img class="after" src="assets/images/ban1.png" alt=""></a>
+							<a class="con2" href=""><img class="before" src="assets/images/ban2-before.png"><img class="after" src="assets/images/ban2.png" alt=""></a>
+							<a class="con3" href=""><img class="before" src="assets/images/ban3-before.png"><img class="after" src="assets/images/ban3.png" alt=""></a>
+						</div>
+					</div>
+					<div class="footer2-right">
+						
+						<a href="">
+							<img class="before" src="assets/images/right1-before.png" alt="">
+							<img class="after" src="assets/images/right1.png" alt="">
+						</a>
+						<a class="right-wx" href="">
+							<img class="before" src="assets/images/right2-before.png" alt="">
+							<img class="after" src="assets/images/right2.png" alt="">
+							<p><img class="wx" src="assets/images/wx-code.jpg" alt=""></p>
+							
+						</a>
+						<a href="">
+							<img class="before" src="assets/images/right3-before.png" alt="">
+							<img class="after" src="assets/images/right3.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/list.js"></script>
+	<script src="node_modules/vue/dist/vue.min.js"></script>
+	<script src="assets/js/listVue.js"></script>
+</body>
+</html>

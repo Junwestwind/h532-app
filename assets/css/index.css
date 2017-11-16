@@ -35,7 +35,7 @@ a {
   top: 0;
   left: 0;
   margin: 0 auto;
-  overflow: hidden;
+  width: 9999px;
 }
 
 .container-carousel .carousel li {
@@ -86,6 +86,11 @@ a {
   border-radius: 50%;
 }
 
+.container-carousel .carousel-index li.active {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
 .container-banner {
   position: absolute;
   top: 0;
@@ -109,6 +114,7 @@ a {
 .container-banner .header {
   float: right;
   margin: 0 50px;
+  display: inline-block;
 }
 
 .container-banner .header li {
@@ -117,10 +123,19 @@ a {
   font-weight: bold;
   padding: 0 15px;
   vertical-align: middle;
+  height: 75px;
 }
 
 .container-banner .header li a {
   color: #fff;
+}
+
+.container-banner .header li img {
+  margin-top: 25px;
+}
+
+.container-banner .header li:hover a {
+  color: #00c3f5;
 }
 
 .container-banner .header .cart-logo {
@@ -134,6 +149,184 @@ a {
   color: red;
   font-size: 12px;
   font-weight: 100;
+}
+
+.container-banner .header .login {
+  position: relative;
+}
+
+.container-banner .header .login .login-content {
+  position: absolute;
+  top: 64px;
+  left: -20px;
+  width: 98px;
+  display: none;
+  font-size: 12px;
+  border-radius: 2px;
+  text-align: center;
+  padding: 15px 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.container-banner .header .login .login-content > li {
+  height: 40px;
+  line-height: 40px;
+}
+
+.container-banner .header .login .login-content > li a {
+  color: #000;
+}
+
+.container-banner .header .login span {
+  position: absolute;
+  top: 54px;
+  left: 25px;
+  display: none;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.container-banner .header .login:hover span {
+  display: block;
+}
+
+.container-banner .header .login:hover .login-content {
+  display: block;
+}
+
+.container-banner .header .cart-logo .cart-add {
+  position: absolute;
+  top: 55px;
+  right: -10px;
+  display: none;
+  width: 300px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.container-banner .header .cart-logo .cart-add img {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  vertical-align: center;
+}
+
+.container-banner .header .cart-logo .cart-add > div {
+  float: left;
+  line-height: 100px;
+  margin-left: 20px;
+}
+
+.container-banner .header .cart-logo .cart-add > div p {
+  height: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.container-banner .header .cart-logo:hover .cart-add {
+  display: block;
+}
+
+.container-banner .header .cart-logo > p {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  display: none;
+  border-top: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+
+.container-banner .header .cart-logo:hover p {
+  display: block;
+}
+
+.container-banner .run-detail {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: none;
+  width: 112.53%;
+  margin-left: -100px;
+  height: 150px;
+  background-color: #fff;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.container-banner .run-detail div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-banner .run-detail div .item {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.container-banner .run-detail div .item ul li {
+  float: left;
+  padding: 5px 8px 20px;
+  width: 136px;
+  height: 132px;
+  text-align: center;
+}
+
+.container-banner .run-detail div .item ul li a {
+  display: line-block;
+  width: 80px;
+  padding: 5px;
+}
+
+.container-banner .run-detail div .item ul li a img {
+  /*height:70%;*/
+  width: auto;
+  width: 70px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.container-banner .run-detail div .item ul li a p {
+  color: #333;
+  margin: 10px 0 3px -9px;
+  line-height: 15px;
+  width: 154px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.container-banner .run-detail div .item ul li a .p2 {
+  color: #666;
+}
+
+.container-banner .run-detail .run-detail1 .item ul {
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+
+.container-banner .run-detail .run-detail2 .item ul {
+  position: relative;
+  left: 50%;
+  margin-left: -530px;
+}
+
+.container-banner .run-detail .run-detail4 .item ul {
+  position: relative;
+  left: 50%;
+  margin-left: -530px;
+}
+
+.container-banner .run-detail .run-detail3 .item ul {
+  position: relative;
+  left: 50%;
+  margin-left: -450px;
 }
 
 .index-container {
@@ -635,6 +828,136 @@ a {
   top: 0;
   left: 0;
   display: none;
+}
+
+/*顶部隐层的导航栏*/
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: none;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.nav-header ul {
+  width: 1240px;
+  margin-left: 200px;
+}
+
+.nav-header ul li {
+  position: relative;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  margin-right: 46px;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-header ul li a {
+  color: #333;
+}
+
+.nav-header ul li a i {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  display: none;
+  height: 2px;
+  width: 100%;
+  background-color: #00c3f5;
+}
+
+.nav-header ul li a:hover i {
+  display: block;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 9999;
+  bottom: 100px;
+  right: -90px;
+  width: 150px;
+  z-index: 9999;
+  color: #fff;
+  font-weight: 400;
+  display: none;
+}
+
+.fixed ul li {
+  position: relative;
+  right: 0;
+  line-height: 50px;
+  background-color: #d8d8d8;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ddd;
+  background-color: #d8d8d8;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.fixed ul li i {
+  display: inline-block;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.fixed ul li div {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+}
+
+.fixed ul .cart span {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 32px;
+  width: 12px;
+  height: 15px;
+  font-size: 10px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.fixed ul .cart div {
+  margin-left: -10px;
+}
+
+.fixed ul .app div {
+  position: absolute;
+  left: -170px;
+  bottom: 0;
+  text-align: center;
+  display: none;
+  width: 170px;
+  margin: 0 auto;
+  background-color: #a39a9a;
+}
+
+.fixed ul .app div img {
+  display: inline-block;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.fixed ul .app div p {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: -5px;
+  background-color: #a39a9a;
 }
 
 .carousel-content {
