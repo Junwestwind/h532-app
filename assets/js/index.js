@@ -242,7 +242,7 @@ $(function(){
 
 	$.get('http://localhost/h5-32/6-program/p02/h532-app/assets/js/index.php',function(data){
 		console.log(data);
-		var content='1';
+		var content='';
 		data.forEach(function(value,key){
 				content+='<li><a href="">';
 					content+='<div>';

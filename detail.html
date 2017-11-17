@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FUNIPICA 0.36x广角15x微距鱼眼镜头套装</title>
+	<link rel="stylesheet" href="assets/css/detail.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_421348_oxliu9nf2mqs38fr.css">
+</head>
+<body>
+<div id="app">
+	<!-- 上面随着滚动出现的框架 -->
+	<div class="scroll">
+		<div class="scroll-content">
+			<ul>
+				<li class="goods"><a href="">商品详情</a></li>
+				<li class="price"><a href=""></a>价格参照</li>
+			</ul>
+			<div class="it-right">
+				<div class="content">
+					<div class="yichu">
+						<div><a href="javascript:void;">现在购买</a></div>
+					</div>
+					<div class="display">
+						FUNIPICA 0.36x广角15x微距鱼眼镜头套装
+						<span>￥119.00</span>
+						<p>流光银</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航栏 -->
+	<div class="main">
+		<div class="container-banner">
+		<div class="img">
+			<img src="assets/images/logo-new2.png" alt="">
+		</div>
+		<ul class="header">
+			<li class="noselect"><a href="">魅族商城</a></li>
+			<li class="select"><a href="">魅族手机</a></li>
+			<li class="select"><a href="">魅蓝手机</a></li>
+			<li class="select"><a href="">魅族声学</a></li>
+			<li class="select"><a href="">智能 . 配件</a></li>
+			<li class="noselect"><a href="">服务</a></li>
+			<li class="noselect"><a href="">专卖店</a></li>
+			<li class="noselect"><a href="">Flyme</a></li>
+			<li class="noselect"><a href="">社区</a></li>
+			<li class="login noselect">
+				<img src="assets/images/icon-user.png" alt="">
+				<span></span>
+				<ul class="login-content">
+					<li><a href="form.html">立即登陆</a></li>
+					<li><a href="form.html">立即注册</a></li>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">M码通道</a></li>
+				</ul>
+			</li>
+			<li class="noselect cart-logo">
+				<img src="assets/images/shop-cart.png" height="22" width="22" alt="">
+				<span>0</span>
+				<p></p>
+				<div class="cart-add">
+					<img src="assets/images/index.png" alt="">
+					
+					<div>
+						<p>登陆后可显示</p>
+						<p>你账号中已加入的商品哦~</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="run-detail">
+			<div class="run-detail1">
+				<div class="item">
+					<ul v-for="goods in detail1">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{goods.type}}</p>
+							<p class="p2">{{goods.price}}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail2">
+				<div class="item active">
+					<ul v-for="goods in detail2">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail3">
+				<div class="item active">
+					<ul v-for="goods in detail3">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="run-detail4">
+				<div class="item active">
+					<ul v-for="goods in detail4">
+						<li><a href="">
+							<img :src="goods.img">
+							<p class="p1">{{ goods.type }}</p>
+							<p class="p2">{{ goods.price }}</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- 产品的详细介绍部分 -->
+	<div class="container">
+		<div class="container-content">
+			<div class="content-header">
+				<a href="">首页</a>
+				<a href="">FUNIPICA 0.36x广角15x微距鱼眼镜头套装</a>
+			</div>
+			<div class="content-row">
+			<!-- 左边的图片部分 -->
+				<div class="left">
+					<div class="row-left active">
+						<div class="img-big">
+							<img class="check" src="assets/images/big1.jpg" alt="">
+							<img src="assets/images/big2.jpg" alt="">
+							<img src="assets/images/big3.jpg" alt="">
+							<img src="assets/images/big4.jpg" alt="">
+						</div>
+						<ul class="img-small">
+							<li class="current"><img src="assets/images/small1.jpg" alt=""></li>
+							<li><img src="assets/images/small2.jpg" alt=""></li>
+							<li><img src="assets/images/small3.jpg" alt=""></li>
+							<li><img src="assets/images/small4.jpg" alt=""></li>
+						</ul>
+						<div class="collect">
+							<a href=""><i class="iconfont icon-collect1"></i>收藏</a>
+						</div>
+					</div>
+					<div class="row-left" v-for="show in shops">
+						<div class="img-big">
+							<img class="check" :src="show.img1" alt="">
+							<img :src="show.img2" alt="">
+							<img :src="show.img3" alt="">
+							<img :src="show.img4" alt="">
+						</div>
+						<ul class="img-small">
+							<li class="current"><img :src="show.img5" alt=""></li>
+							<li><img :src="show.img6" alt=""></li>
+							<li><img :src="show.img7" alt=""></li>
+							<li><img :src="show.img8" alt=""></li>
+						</ul>
+						<div class="collect">
+							<a href=""><i class="iconfont icon-collect1"></i>收藏</a>
+						</div>
+					</div>
+				</div>
+				<div class="row-right">
+					<div class="right-hd">
+						<h1>FUNIPICA 0.36x广角15x微距鱼眼镜头套装</h1>
+						<p>手机外置镜头 单反手机镜头 手机自拍镜头 通用型</p>
+					</div>
+					<div class="right-price">
+						<dl>
+							<dt class="vm-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</dt>
+							<dd>￥199.00</dd>
+						</dl>
+					</div>
+					<div class="select-color">
+						<dl>
+							<dt>颜色分类:</dt>
+							<dd class="colors">
+								<a class="selected" href="javascript:;"><img src="assets/images/color1.png" alt=""><span>流光银</span></a>
+								<a href="javascript:;"><img src="assets/images/color2.png" alt=""><span>香槟金</span></a>
+								<a href="javascript:;"><img src="assets/images/color3.png" alt=""><span>优雅蓝</span></a>
+								<a href="javascript:;"><img src="assets/images/color4.png" alt=""><span>炫酷黑</span></a>
+							</dd>
+						</dl>
+					</div>
+					<div class="right-service">
+						<dl class="service-item">
+							<dt class="vm-title">支&nbsp;&nbsp;&nbsp;&nbsp;持:</dt>
+							<dd><span><i class="iconfont icon-right"></i>花呗分期</span></dd>
+						</dl>
+						<dl class="service-suda">
+							<dt class="vm-title">配&nbsp;&nbsp;&nbsp;&nbsp;送:</dt>
+							<dd>
+								<div class="all-area">
+									<div class="select-area">广东 广州市 【请选择】</div>
+									<div class="all">
+										<div class="all-header">
+											<ul>
+												<li class="x1 active">广东</li>
+												<li class="x2">请选择</li>
+												<li class="x3">请选择</li>
+												<li class="x4">请选择</li>
+											</ul>
+										</div>
+										<div class="all-content">
+											<ul id="dis1" class="dis1 active">
+												<li v-for="i in city1">{{i}}</li>
+												<li>...</li>
+											</ul>
+											<ul class="dis2">
+												<li v-for="j in city2">{{ j }}</li>
+												
+											</ul>
+											<ul class="dis3" >
+												<li v-for="k in city3">{{k}}</li>
+												
+											</ul>
+											<ul class="dis4">
+												<li v-for="v in city4">{{ v }}</li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="service-provider">
+							<dt class="vm-title">服&nbsp;&nbsp;&nbsp;&nbsp;务:</dt>
+							<dd>本商品由 北京苪森科技有限公司 负责发货并提供售后服务</dd>
+						</dl>
+					</div>
+					<div class="right-huabei">
+						<div class="vm-title">花呗分期：</div>
+						<div class="huabei-detail">
+							<a class="prop" href="javascript:;">
+								<span class="kinds1">￥40.58x3期</span>
+								<span class="kinds2">含手术费0.91/期</span>
+							</a>
+							<a href="javascript:;">
+								<span class="kinds1">￥20.73x6期</span>
+								<span class="kinds2">含手术费0.89/期</span>
+							</a>
+							<a href="javascript:;">
+								<span class="kinds1">￥10.66x12期</span>
+								<span class="kinds2">含手术费0.74/期</span>
+							</a>
+						</div>
+						<a href=""><i class="iconfont icon-whatsnew"></i>什么时花呗分期</a>
+					</div>
+					<div class="right-buy">
+						<dl>
+							<dt class="vm-title">数&nbsp;&nbsp;&nbsp;&nbsp;量：</dt>
+							<dd>
+								<div class="mod-control">
+									<a class="vm-minus" href="javascript:;" title="减少">-</a>
+									<input type="text" value="1" data-max="99">
+									<a class="vm-plus" href="javascript:;">+</a>
+								</div>
+							</dd>
+						</dl>
+						<div class="buy-label">
+							<a class="btn-buy" href="javascript:void(0);">立即购买</a>
+							<a class="jia" href="javascript:void(0);">加入购物车</a>
+						</div>
+					</div>
+					<div class="right-footer">
+						<dl>
+							<dt>还可以看：</dt>
+							<dd>
+								<ul>
+									<li><a href=""><img src="assets/images/buy.jpg" alt="">猎奇（LIEQI）手机镜头 广角+鱼眼+微距套装</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-detail">
+			<div class="main-hd">
+				<ul>
+					<li><a class="active" href="javascript:;">商品详情</a></li>
+					<li><a href="javascript:;">规格参数</a></li>
+				</ul>
+			</div>
+			<div class="goods-info">
+				<div class="main-img active">
+					<div class="img">
+						<img src="assets/images/img1.jpg" alt="">
+						<img src="assets/images/img6.jpg" alt="">
+						<img src="assets/images/img3.jpg" alt="">
+						<img src="assets/images/img4.jpg" alt="">
+						<img src="assets/images/img5.jpg" alt="">
+						<img src="assets/images/img7.jpg" alt="">
+					</div>
+				</div>
+				<div class="main-detail">
+					<table border="1">
+						<tr class="t1">
+							<td colspan="2" class="d1">基础信息</td>
+						</tr>
+						<tr>
+							<th>品牌</th>
+							<td>FUNIPICA</td>
+						</tr>
+						<tr>
+							<th>型号</th>
+							<td>F-516</td>
+						</tr>
+						<tr>
+							<th>重量</th>
+							<td>101g</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+			<div class="footer-link">
+				<div class="footer1">
+					<ul>
+						<li v-for="k in footer"><a href="">
+                             <img :src="k.img">
+                             <span>{{ k.use }}</span>
+						</a></li>
+					</ul>
+					<div class="footer1-right">
+						<span>24小时全国服务热线</span>
+						<p class="tel">400-788-3333</p>
+						<a href=""><img src="assets/images/untitled-footer.png" alt="">在线客服</a>
+					</div>
+				</div>
+				<hr>
+				<div class="footer2">
+					<div class="footer2-left">
+						<ul>
+							<li>了解魅族</li>
+							<li>加入我们</li>
+							<li>联系我们</li>
+							<li>Flyme</li>
+							<li>魅族社区</li>
+							<li>天猫旗舰店</li>
+							<li>问题反馈</li>
+							<li>线上销售授权名单公示</li>
+							<li class="last-a"><span><img src="assets/images/lang-logo.png" alt=""></span>中文</li>
+						</ul>
+						<div class="left-con">
+						&copy;2017 Meizu Telecom Equipment Co. Ltd. All rights reserved.
+							<a href="">粤ICP备1300360号</a>
+							<a href="">合字B2-20170010</a>
+							<a href="">营业执照</a>
+							<a href="">法律声明</a>
+							<span><i></i>粤公网安备 44049102496009 号</span>
+							<a class="con1" href=""><img class="before" src="assets/images/ban1-before.png"><img class="after" src="assets/images/ban1.png" alt=""></a>
+							<a class="con2" href=""><img class="before" src="assets/images/ban2-before.png"><img class="after" src="assets/images/ban2.png" alt=""></a>
+							<a class="con3" href=""><img class="before" src="assets/images/ban3-before.png"><img class="after" src="assets/images/ban3.png" alt=""></a>
+						</div>
+					</div>
+					<div class="footer2-right">
+						
+						<a href="">
+							<img class="before" src="assets/images/right1-before.png" alt="">
+							<img class="after" src="assets/images/right1.png" alt="">
+						</a>
+						<a class="right-wx" href="">
+							<img class="before" src="assets/images/right2-before.png" alt="">
+							<img class="after" src="assets/images/right2.png" alt="">
+							<p><img class="wx" src="assets/images/wx-code.jpg" alt=""></p>
+							
+						</a>
+						<a href="">
+							<img class="before" src="assets/images/right3-before.png" alt="">
+							<img class="after" src="assets/images/right3.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/detail.js"></script>
+	<script src="node_modules/vue/dist/vue.min.js"></script>
+	<script src="assets/js/detailVue.js"></script>
+</body>
+</html>

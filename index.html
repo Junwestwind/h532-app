@@ -148,20 +148,10 @@
 	<div class="index-container">
 		<div class="container1">
 			<ul class="container1-content">
-				<li>
-					<img src="assets/images/container1-1.jpg" alt="">
-					<h4>推荐有奖</h4>	
-					<p>瓜分百万奖金</p>
-				</li>
-				<li>
-					<img src="assets/images/container1-2.jpg" alt="">
-					<h4>魅蓝Note6</h4>	
-					<p>高通八核CPU疾速双摄</p>
-				</li>
-				<li>
-					<img src="assets/images/container1-3.jpg" alt="">
-					<h4>魅蓝E2</h4>	
-					<p>限时特惠100元</p>
+				<li v-for="j in container1">
+					<img :src="j.img" alt="">
+					<h4>{{ j.type }}</h4>	
+					<p>{{ j.you }}</p>
 				</li>
 				<li class="last-con">
 					<img src="assets/images/container1-4.jpg" alt="">
@@ -175,38 +165,9 @@
 			<img src="assets/images/container2-big.png" alt="">
 			<div class="container2-right">
 				<ul>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-1.png" alt="">
-						<span>手机</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-2.png" alt="">
-						<span>壳膜套</span>
-					</a>
-					</li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-3.png" alt="">
-						<span>数据线</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-4.png" alt="">
-						<span>电源适配器</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-5.png" alt="">
-						<span>数码影音</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-6.png" alt="">
-						<span>智能硬件</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-7.png" alt="">
-						<span>生活周边</span>
-					</a></li>
-					<li><a href="">
-						<img src="assets/images/icon-accessory-8.png" alt="">
-						<span>所有分类</span>
+					<li v-for="shop in container2"><a href="">
+						<img :src="shop.img" alt="">
+						<span>{{ shop.name }}</span>
 					</a></li>
 				</ul>
 			</div>
@@ -214,37 +175,15 @@
 		<!-- 第三商品区 -->
 		<div class="container3">
 			<ul>
-				<li><a href="">
+				<li v-for="shop in container3"><a href="">
 					<div class="big-phone">
-						<img class="after" src="assets/images/after1.png" alt="">
-						<img class="before" src="assets/images/before1.png" alt="">
+						<img class="after" :src="shop.img1" alt="">
+						<img class="before" :src="shop.img2" alt="">
 					</div>
 					<span class="phone-info">
-						<span>魅族PRO7</span>
-						<span>新品现货12期免息</span>
-						<em>￥2880起</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="big-phone">
-						<img class="after" src="assets/images/after2.png" alt="">
-						<img class="before" src="assets/images/before2.png" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族PRO 7 Plus</span>
-						<span>购机享12期免息</span>
-						<em>￥3580起</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="big-phone">
-						<img class="after" src="assets/images/after3.png" alt="">
-						<img class="before" src="assets/images/before3.png" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族PRO 6s</span>
-						<span>直降200 购机仅需2299元</span>
-						<em>￥2299</em>
+						<span>{{ shop.type }}</span>
+						<span>{{ shop.you }}</span>
+						<em>{{ shop.price }}</em>
 					</span>
 				</a></li>
 				<li class="last-li"><a href="">
@@ -278,136 +217,15 @@
 		<!-- 第五商品区 -->
 		<div class="container5">
 			<ul>
-				<li><a href="">
+				<li v-for="shop in container5"><a href="">
 					<div class="content-pic">
-						<img class="before" src="assets/images/container4-1.png">
-						<img class="after" src="assets/images/container4-1.jpg" alt="">
+						<img class="before" :src="shop.img1">
+						<img class="after" :src="shop.img2" alt="">
 					</div>
 					<span class="phone-info">
-						<span>魅蓝旅行包</span>
-						<span>青春正好，即刻出发</span>
-						<em>￥269</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-2.png">
-						<img class="after" src="assets/images/container4-2.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族手环</span>
-						<span>腕间流动的心率专家</span>
-						<em>￥229</em>
-					</span>
-				</a></li>
-				<li class="nth"><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-3.png">
-						<img class="after" src="assets/images/container4-3.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族EP51蓝牙运动耳机</span>
-						<span>丛林绿/云雾蓝新品开售</span>
-						<em>￥229</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-4.png">
-						<img class="after" src="assets/images/container4-4.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅篮 休闲旅行双肩包</span>
-						<span>曲面一体式 多功能隔层</span>
-						<em>￥199</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-5.png">
-						<img class="after" src="assets/images/container4-5.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族EP2X耳机</span>
-						<span>契合声音的流动之美</span>
-						<em>￥129</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-6.png">
-						<img class="after" src="assets/images/container4-6.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族智能体脂秤</span>
-						<span>精准的数字 才是真实的你</span>
-						<em>￥168</em>
-					</span>
-				</a></li>
-				<li class="nth"><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-7.png">
-						<img class="after" src="assets/images/container4-7.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族盒子一键找回遥控器</span>
-						<span>一键找回遥控器</span>
-						<em>￥399</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-8.png">
-						<img class="after" src="assets/images/container4-8.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族HD50 头戴式耳机</span>
-						<span>清新简洁，有音质更有颜值</span>
-						<em>￥399</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-9.png">
-						<img class="after" src="assets/images/container4-9.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族蓝牙小音箱</span>
-						<span>好音感 直达心灵</span>
-						<em>￥169</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-10.png">
-						<img class="after" src="assets/images/container4-10.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族路由器 极速版</span>
-						<span>天生不凡 快狠稳</span>
-						<em>￥199</em>
-					</span>
-				</a></li>
-				<li class="nth"><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-11.png">
-						<img class="after" src="assets/images/container4-11.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>Hi Case趣闪保护壳</span>
-						<span>专为魅蓝E2量身打造</span>
-						<em>￥79</em>
-					</span>
-				</a></li>
-				<li><a href="">
-					<div class="content-pic">
-						<img class="before" src="assets/images/container4-12.png">
-						<img class="after" src="assets/images/container4-12.jpg" alt="">
-					</div>
-					<span class="phone-info">
-						<span>魅族 蓝牙通话耳机</span>
-						<span>经典小圆点一键集大成</span>
-						<em>￥89</em>
+						<span>{{ shop.type }}</span>
+						<span>{{ shop.you }}</span>
+						<em>{{ shop.price }}</em>
 					</span>
 				</a></li>
 			</ul>
@@ -418,33 +236,9 @@
 			<div><a href=""><img src="assets/images/container6-2.jpg" alt=""></a></div>
 			<div><a href=""><img src="assets/images/container6-3.jpg" alt=""></a></div>
 			<ul>
-				<li><a href="">
-     				<img src="assets/images/icon-server1.png" alt="">
-     				<span>真伪查询</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server2.png" alt="">
-     				<span>以旧换新</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server3.png" alt="">
-     				<span>系统下载</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server4.png" alt="">
-     				<span>注册产品</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server5.png" alt="">
-     				<span>查找手机</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server6.png" alt="">
-     				<span>云服务</span>
-				</a></li>
-				<li><a href="">
-     				<img src="assets/images/icon-server7.png" alt="">
-     				<span>M码通道</span>
+				<li v-for="sever in container6"><a href="">
+     				<img :src="sever.img" alt="">
+     				<span>{{ sever.typename }}</span>
 				</a></li>
 			</ul>
 		</div>
@@ -493,37 +287,9 @@
 			<div class="footer-link">
 				<div class="footer1">
 					<ul>
-						<li><a href="">
-                             <img src="assets/images/untitled1.png">
-                             <span>全场包邮</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled2.png">
-                             <span>百城速达</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled3.png">
-                             <span>7天无理由退货</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled4.png">
-                             <span>15天换货保障</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled5.png">
-                             <span>1年免费保修</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled6.png">
-                             <span>2300+线下体验店</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled7.png">
-                             <span>远程支持服务</span>
-						</a></li>
-						<li><a href="">
-                             <img src="assets/images/untitled8.png">
-                             <span>上门快降</span>
+						<li v-for="k in footer"><a href="">
+                             <img :src="k.img">
+                             <span>{{ k.use }}</span>
 						</a></li>
 					</ul>
 					<div class="footer1-right">
