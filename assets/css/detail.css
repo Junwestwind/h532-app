@@ -1078,6 +1078,19 @@ a {
   color: #515151;
 }
 
+.footer .footer-link .footer2 .footer2-left .left-con a .before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer .footer-link .footer2 .footer2-left .left-con a .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .footer .footer-link .footer2 .footer2-left .left-con a:hover {
   color: #00d3f5;
 }

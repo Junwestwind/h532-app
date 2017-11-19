@@ -959,6 +959,17 @@ a{
 						}
 						a{
 							color:#515151;
+							.before{
+								position:absolute;
+								top:0;
+								left:0;
+							}
+							.after{
+								position:absolute;
+								top:0;
+								left:0;
+								display: none;
+							}
 						}
 						a:hover{
 							color:#00d3f5;
